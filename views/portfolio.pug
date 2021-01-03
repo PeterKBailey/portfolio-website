@@ -1,0 +1,32 @@
+doctype html
+head
+    title My Projects
+    link(href='/styles/portfolio.css' rel='stylesheet')
+    link(href='/styles/header.css' rel='stylesheet')
+
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    script(src='/js/portfolio.js')
+
+body(onload = "init()")
+    include ./partials/header.pug
+    br
+    br
+    br
+    .main
+        .github
+            B Code Shared On
+            a(href = "https://github.com/PeterKBailey")
+                img.logo(src = "/images/GitHub_Logo.png")
+        br
+        br
+        br
+        #currentImage
+            img.gif(id = "displayImg" src = "/images/gravity.gif")
+        div.center
+            a(id = "githubLink" href = "https://github.com/PeterKBailey/mass-simulator")
+                h2(id = "title") Gravity + Collision Sim
+            
+        div.center
+            input.button(id = "prev" type = "button" value = "prev")
+            input.button(id = "next" type = "button" value = "next")
+

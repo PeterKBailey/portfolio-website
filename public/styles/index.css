@@ -1,0 +1,72 @@
+
+
+@media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+}
+
+/* THIS IS WHERE THE INDEX.pug STUFF HAPPENS */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:700px;
+    background-image: url("/images/me_cottage.jpg");
+    /* background-color: #cccccc; */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.name {
+    font-size: 55pt;
+    color: #e8e8e8;
+    background-color: rgba(34, 40, 49, 0.7);
+    text-align: center;
+    padding:20px;
+}
+
+
+.left { 
+    flex: 1 1;
+    background-color: #222831;
+    padding: 20px;
+
+}
+
+.profilepic{
+    border-radius: 50%; 
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.main {
+    color: #e8e8e8;
+    flex: 1 1 70%;
+    background-color: #30475e;
+    padding: 20px;
+    padding-top:10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about_me{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: #222831;
+}
+
