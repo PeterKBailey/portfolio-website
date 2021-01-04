@@ -8,5 +8,10 @@
         "fileName" : "MovieDatabase.gif",
         "projectName" : "Movie Database Web Application",
         "githubLink" : "https://github.com/PeterKBailey/MovieDatabase"
+    },
+    {
+        "fileName" : "bellabeansbot.gif",
+        "projectName" : "Team-Made Discord Bot",
+        "githubLink" : "https://github.com/PeterKBailey/BellaBeansDiscordBot"
     }
 ]

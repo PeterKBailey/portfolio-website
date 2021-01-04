@@ -14,11 +14,9 @@
     flex-direction: row;
     height:700px;
     background-image: url("/images/me_cottage.jpg");
-    /* background-color: #cccccc; */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-
     justify-content: center;
     align-items:flex-end;
 }
@@ -36,7 +34,6 @@
     flex: 1 1;
     background-color: #222831;
     padding: 20px;
-
 }
 
 .profilepic{
@@ -45,11 +42,11 @@
     max-height: 150px;
 }
 
-.center {
+/* .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 
 .main {

@@ -10,6 +10,13 @@ app.use(express.static("public"));
 //set the template engine to pug
 app.set("view engine", "pug");
 
+//json parser
+app.use(express.json());
+//
+app.use(express.urlencoded({
+    extended: true
+  }))
+
 //Get the key and certification for https
 const fs = require('fs');
 const key = fs.readFileSync('server.key');
@@ -38,6 +45,11 @@ function sendPortfolio(req, res){
             }
         }
     );
+}
+
+app.get("/contactme", sendContactForm);
+function sendContactForm(req, res){
+    res.render("contactme.pug");
 }
 
 //start the server listening
