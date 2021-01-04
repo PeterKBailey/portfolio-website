@@ -1,0 +1,42 @@
+input[type=text] {
+    width: 100%;
+    padding: 20px;
+    margin: 8px;
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    transition: border 0.4s ease-in-out;
+    resize:both;
+}
+
+input[type=submit] {
+    width: 75%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #f05454;
+    color: white;
+    font-size: x-large;
+    border:2px solid #f05454;
+    outline:none;
+    margin-bottom:50px;
+}
+
+input[type=submit]:hover {
+    border: 2px solid #7b9dbe;
+}
+
+/* .center {
+    display: flex;
+    justify-content: center;
+} */
+
+form {
+    width: 50%;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

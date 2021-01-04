@@ -1,0 +1,35 @@
+doctype html
+head
+    title Contact Me
+    link(href='/styles/contactme.css' rel='stylesheet')
+    link(href='/styles/header.css' rel='stylesheet')
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+body
+    include ./partials/header.pug
+    br
+    br
+    .main
+        form(id = "form" action = "/movies" method = "post" autocomplete="on")
+            label(for = "name") Name: 
+            input(type = "text" name = "name" required)
+            br
+            br
+            label(for = "email") Email: 
+            input(type = "text" name = "email")
+            br
+            br
+            label(for = "subject") Subject: 
+            input(type = "text" name = "subject")
+            br
+            br
+            label(for = "message") Message: 
+            input(type = "text" name = "message" required)
+            br
+            br
+            .submitDiv.center
+                <input type="submit" value = "submit">	
+    include ./partials/footer.pug
+    
