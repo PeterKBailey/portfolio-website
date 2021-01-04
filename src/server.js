@@ -15,7 +15,7 @@ app.use(express.json());
 //
 app.use(express.urlencoded({
     extended: true
-  }))
+}));
 
 //Get the key and certification for https
 const fs = require('fs');
@@ -50,6 +50,26 @@ function sendPortfolio(req, res){
 app.get("/contactme", sendContactForm);
 function sendContactForm(req, res){
     res.render("contactme.pug");
+}
+
+
+app.post("/contactme", getMessage)
+
+function getMessage(req, res){
+    const message = `
+        <h2>You've been contacted!</h2>
+        <ul>
+            <li>Name: ${req.body.name}</li>
+            <li>Email: ${req.body.email}</li>
+        </ul>
+        <h4>Subject: ${req.body.subject}</h4>
+        <p>Message: ${req.body.message}</p>
+    `;
+
+    //node mailer to recieve the emails
+    const mailJS = require("./mailer.js");
+    mailJS.main(message);
+    res.render("received.pug");
 }
 
 //start the server listening

@@ -17,4 +17,5 @@
 <ul>
     <li>Express NPM module</li>
     <li>HTTPS NPM module</li>
+    <li>Node Mailer (~optional), this is how the contact form works, due to sensitive information required this was set up in a separate file which was then required by the server file</li>
 </ul>
