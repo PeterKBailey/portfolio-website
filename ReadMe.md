@@ -1,4 +1,4 @@
-<h1>Keith Bailey Portfolio Website</h1>
+<h1>Portfolio Website</h1>
 <p>A website mostly about me</p>
 
 <h2>Launching instructions</h2>
